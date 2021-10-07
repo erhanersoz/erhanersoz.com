@@ -1,0 +1,63 @@
+$border-radius: 12px;
+$icon-size: 32px;
+$icon-container-size: 48px;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+
+  .header-logo-container {
+    display: flex;
+    @include for-phone-only {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }
+  .social {
+    display: flex;
+    @include for-phone-only {
+      justify-content: space-evenly;
+    }
+    div {
+      margin-left: 10px;
+      @include for-phone-only {
+        margin-left: 0;
+      }
+    }
+  }
+
+  div {
+    .nav-item {
+      .nav-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-primary;
+        width: $icon-container-size;
+        height: $icon-container-size;
+        border-radius: $border-radius;
+        &:hover {
+          background-color: $color-icon-bg;
+          border: 2px solid $color-icon-border-hover;
+        }
+        &:focus {
+          background-color: $color-icon-bg;
+          border: 2px solid $color-icon-border-focus;
+        }
+
+        .icon {
+          display: inline-block;
+          width: $icon-size;
+          height: $icon-size;
+          stroke-width: 0;
+          stroke: currentColor;
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}
