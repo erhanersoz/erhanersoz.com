@@ -7,7 +7,7 @@ My personal website
 ## Installation
 ```git clone https://github.com/erhanersoz/erhanersoz.com.git```
 
-```erhanersoz.com```
+```cd erhanersoz.com```
 
 ```yarn install```
 
