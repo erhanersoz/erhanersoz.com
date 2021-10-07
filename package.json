@@ -5,7 +5,7 @@
   "source": "src/*.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build  "
+    "build": "parcel build"
   },
   "author": "erhanersoz",
   "license": "ISC",
