@@ -1,0 +1,15 @@
+{
+  "name": "erhanersoz.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "source": "src/*.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build  "
+  },
+  "author": "erhanersoz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
